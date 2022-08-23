@@ -1,0 +1,67 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.app-logo {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+}
+
+.app-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-link {
+  text-decoration: none !important;
+  color: black;
+  margin-left: 30px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.navbar-link:hover {
+  transform: translateY(-1px);
+}
+
+.navbar-right {
+  padding-right: 30px;
+}
+
+.navbar-right input {
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #ffe5d9;
+  border-radius: 10px 0 0 10px;
+}
+
+.navbar-right input:focus {
+  outline: none;
+}
+
+.navbar-right button {
+  height: 40px;
+  width: 60px;
+  border: 2px solid #ffe5d9;
+  background-color: #ffe5d9;
+  color: black;
+  border-radius: 0 10px 10px 0;
+}
+
+.navbar-right button:hover {
+  cursor: pointer;
+}

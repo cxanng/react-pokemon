@@ -1,0 +1,33 @@
+.pokemon-type-container {
+  width: 100%;
+  min-height: calc(100vh - 67px);
+  display: flex;
+  margin-top: 67px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokemon-type-title {
+  margin-bottom: 20px;
+}
+
+.pokemon-type-list {
+  width: 50%;
+}
+
+.pokemon-type-item {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #fcd5ce;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.pokemon-type-item a {
+  text-decoration: none;
+  color: black;
+}

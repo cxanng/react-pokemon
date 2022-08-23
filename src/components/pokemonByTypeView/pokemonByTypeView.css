@@ -1,0 +1,8 @@
+.empty-list {
+  width: 100%;
+  min-height: calc(100vh - 67px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 67px;
+}
