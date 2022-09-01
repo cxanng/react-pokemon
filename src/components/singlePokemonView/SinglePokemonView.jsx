@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query'
 import { useParams } from 'react-router-dom';
 import { getPokemonByName } from '../../services/pokemons';
+import { useNavigate } from 'react-router-dom';
 import { AiFillHeart, AiFillFire } from 'react-icons/ai';
 import { TbSword } from 'react-icons/tb';
 import { BsFillShieldFill } from 'react-icons/bs';
@@ -13,6 +14,7 @@ import NotFound from '../notFound/NotFound';
 
 const SinglePokemonDialog = () => {
   let { name } = useParams();
+  const navigate = useNavigate();
 
   const {
     data,
@@ -37,7 +39,11 @@ const SinglePokemonDialog = () => {
         <div className="single-view-content">
           <span className='single-view-prop'>Types:</span> 
             {data.types.map(item => (
-              <span className='pokemon-card-type-item' key={`pokemon-type-${item.type.name}`}>{
+              <span 
+                className='pokemon-card-type-item' 
+                key={`pokemon-type-${item.type.name}`}
+                onClick={() => navigate(`/type/${item.type.name}`)}  
+              >{
                 item.type.name
               }</span>
             ))}

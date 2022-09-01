@@ -26,13 +26,15 @@ const NavBar = () => {
         <Link to='/type' className='navbar-link'><h2>Types</h2></Link>
       </div>
       <div className="navbar-right">
-        <input
-          type="text"
-          placeholder="Pikachu"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <button onClick={handleSearch}>Search</button>
+        <form onSubmit={handleSearch}>
+          <input
+            type="text"
+            placeholder="Pikachu"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button type='submit'>Search</button>
+        </form>
       </div>
     </nav>
   )
